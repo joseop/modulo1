@@ -1,0 +1,40 @@
+entity UnidadAcademica {
+	codigoUnidad Integer
+    nombreUnidad String
+    tipoUnidad String
+    nombreDecano String
+    descripcion String
+}
+
+entity SubunidadAcademica {
+	codigoSubunidad Integer
+    nombreSubunidad String
+    tipoSubunidad String
+    nombreJefe String
+    descripcion String
+}
+
+entity ProgramaAcademico {
+	codigoPrograma Integer
+    nombrePrograma String
+    codigoSnies Integer
+    nombreEncargado String
+    tipoPrograma String
+    modalidadPrograma String
+    contactosAyuda String
+}
+
+relationship OneToMany {
+	UnidadAcademica to SubunidadAcademica{unidadAcademica}
+}
+relationship OneToMany {
+	SubunidadAcademica to ProgramaAcademico{subunidadAcademica}
+}
+
+
+paginate UnidadAcademica, SubunidadAcademica with infinite-scroll
+
+paginate ProgramaAcademico with pagination
+
+service all with serviceImpl except ProgramaAcademico
+

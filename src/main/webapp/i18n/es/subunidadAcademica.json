@@ -1,0 +1,30 @@
+{
+  "modulo1App": {
+    "subunidadAcademica": {
+      "home": {
+        "title": "Subunidad Academicas",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo Subunidad Academica",
+        "createOrEditLabel": "Crear o editar Subunidad Academica",
+        "notFound": "Ningún Subunidad Academicas encontrado"
+      },
+      "created": "Un nuevo Subunidad Academica ha sido creado con el identificador {{ param }}",
+      "updated": "Un Subunidad Academica ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Subunidad Academica ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Subunidad Academica {{ id }}?"
+      },
+      "detail": {
+        "title": "Subunidad Academica"
+      },
+      "id": "ID",
+      "codigoSubunidad": "Codigo Subunidad",
+      "nombreSubunidad": "Nombre Subunidad",
+      "tipoSubunidad": "Tipo Subunidad",
+      "nombreJefe": "Nombre Jefe",
+      "descripcion": "Descripcion",
+      "programaAcademico": "Programa Academico",
+      "unidadAcademica": "Unidad Academica"
+    }
+  }
+}

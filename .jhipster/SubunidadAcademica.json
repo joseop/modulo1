@@ -1,0 +1,49 @@
+{
+  "applications": "*",
+  "changelogDate": "20230422154648",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "subunidad_academica",
+  "fields": [
+    {
+      "fieldName": "codigoSubunidad",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "nombreSubunidad",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tipoSubunidad",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "nombreJefe",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "descripcion",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "SubunidadAcademica",
+  "pagination": "infinite-scroll",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "programaAcademico",
+      "otherEntityRelationshipName": "subunidadAcademica",
+      "relationshipName": "programaAcademico",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "unidadAcademica",
+      "otherEntityRelationshipName": "subunidadAcademica",
+      "relationshipName": "unidadAcademica",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceImpl"
+}

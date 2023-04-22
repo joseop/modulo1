@@ -1,0 +1,51 @@
+{
+  "applications": "*",
+  "changelogDate": "20230422154649",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "programa_academico",
+  "fields": [
+    {
+      "fieldName": "codigoPrograma",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "nombrePrograma",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "codigoSnies",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "nombreEncargado",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tipoPrograma",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "modalidadPrograma",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "contactosAyuda",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "ProgramaAcademico",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "subunidadAcademica",
+      "otherEntityRelationshipName": "programaAcademico",
+      "relationshipName": "subunidadAcademica",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}

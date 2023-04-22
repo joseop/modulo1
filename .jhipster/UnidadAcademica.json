@@ -1,0 +1,43 @@
+{
+  "applications": "*",
+  "changelogDate": "20230422154647",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "unidad_academica",
+  "fields": [
+    {
+      "fieldName": "codigoUnidad",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "nombreUnidad",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tipoUnidad",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "nombreDecano",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "descripcion",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "UnidadAcademica",
+  "pagination": "infinite-scroll",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "subunidadAcademica",
+      "otherEntityRelationshipName": "unidadAcademica",
+      "relationshipName": "subunidadAcademica",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "serviceImpl"
+}

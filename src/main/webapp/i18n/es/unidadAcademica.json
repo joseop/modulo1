@@ -1,0 +1,29 @@
+{
+  "modulo1App": {
+    "unidadAcademica": {
+      "home": {
+        "title": "Unidad Academicas",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo Unidad Academica",
+        "createOrEditLabel": "Crear o editar Unidad Academica",
+        "notFound": "Ningún Unidad Academicas encontrado"
+      },
+      "created": "Un nuevo Unidad Academica ha sido creado con el identificador {{ param }}",
+      "updated": "Un Unidad Academica ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Unidad Academica ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Unidad Academica {{ id }}?"
+      },
+      "detail": {
+        "title": "Unidad Academica"
+      },
+      "id": "ID",
+      "codigoUnidad": "Codigo Unidad",
+      "nombreUnidad": "Nombre Unidad",
+      "tipoUnidad": "Tipo Unidad",
+      "nombreDecano": "Nombre Decano",
+      "descripcion": "Descripcion",
+      "subunidadAcademica": "Subunidad Academica"
+    }
+  }
+}
